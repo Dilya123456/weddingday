@@ -6,7 +6,7 @@
 <title>Султан и Дилдора — 16 июля 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Marck+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -16,7 +16,7 @@
   --cream:#f9f7f4;
   --garnet:#8B1A2C;
   --ease:cubic-bezier(.22,.61,.36,1);
-  --script:"Great Vibes",cursive;
+  --script:"Italianno",cursive;
   --script-cyr:"Marck Script",cursive;
   --serif:"Cormorant Garamond",Georgia,serif;
   --ui:"Montserrat",sans-serif;
@@ -721,6 +721,12 @@ function enter(l) {
       document.querySelector('.cover').classList.add('cover-in');
     });
   });
+  // автоплей: запускаем музыку после первого tap/click пользователя
+  var au = document.getElementById('au');
+  var btn = document.getElementById('mbtn');
+  if(au && au.getAttribute('src')){
+    au.play().then(function(){ if(btn) btn.classList.add('on'); }).catch(function(){});
+  }
 }
 
 function setL(l) { applyLang(l); }
