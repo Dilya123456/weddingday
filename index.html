@@ -215,10 +215,12 @@ body{
   white-space:nowrap;
   opacity:0;
   margin:16px 6px;
+
+  animation:fI 1.4s var(--ease) 1s forwards;
 }
 .cover-in 
 .cover-in 
-.cover-in .mono-names{animation:fI 1.4s var(--ease) 1s forwards}
+.cover-in 
 @keyframes iIn{from{opacity:0;transform:scale(1.14)}to{opacity:1;transform:scale(1)}}
 
 /* Countdown */
@@ -307,7 +309,7 @@ body{
 .map-wrap iframe{width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.04) brightness(1.04)}
 .map-pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);pointer-events:none;color:var(--garnet);filter:drop-shadow(0 4px 8px rgba(0,0,0,.2));animation:pf 2.8s ease-in-out infinite}
 @keyframes pf{0%,100%{transform:translate(-50%,-100%)}50%{transform:translate(-50%,-115%)}}
-.rbtn{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:13px 32px;font-family:var(--serif);font-weight:400;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#1a1714;border:1px solid var(--ink20);background:transparent;transition:background .4s var(--ease),color .4s var(--ease),transform .3s var(--ease)}
+.rbtn{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:13px 32px;font-family:var(--serif);font-weight:400;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#1a1714;border:1.5px solid #1a1714;background:transparent;transition:background .4s var(--ease),color .4s var(--ease),transform .3s var(--ease)}
 .rbtn:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px)}
 .rbtn svg{width:14px;height:14px}
 
