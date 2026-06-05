@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Султан и Дилдора — 16 июля 2026</title>
@@ -159,8 +156,10 @@ body{
   text-shadow:0 2px 28px rgba(0,0,0,.45);
   margin-top:clamp(48px,8vh,80px);
   opacity:0;
+
+  animation:fD 1.3s var(--ease) .3s forwards
 }
-.cover-in .c-wd{animation:fD 1.3s var(--ease) .3s forwards}
+.cover-in 
 
 /* ── MONOGRAM КВАДРАТ ──
    Концепция: невидимый квадрат по центру экрана.
@@ -188,6 +187,8 @@ body{
   line-height:.78;
   text-shadow:0 4px 44px rgba(0,0,0,.45);
   opacity:0;
+
+  animation:iIn 1.4s var(--ease) .55s forwards
 }
 /* D — cell [row3,col3] */
 .mono-d{
@@ -198,6 +199,8 @@ body{
   line-height:.78;
   text-shadow:0 4px 44px rgba(0,0,0,.45);
   opacity:0;
+
+  animation:iIn 1.4s var(--ease) .78s forwards
 }
 /* Имена вертикально — cell [row1-3, col2] */
 .mono-names{
@@ -213,8 +216,8 @@ body{
   opacity:0;
   margin:16px 6px;
 }
-.cover-in .mono-s{animation:iIn 1.4s var(--ease) .55s forwards}
-.cover-in .mono-d{animation:iIn 1.4s var(--ease) .78s forwards}
+.cover-in 
+.cover-in 
 .cover-in .mono-names{animation:fI 1.4s var(--ease) 1s forwards}
 @keyframes iIn{from{opacity:0;transform:scale(1.14)}to{opacity:1;transform:scale(1)}}
 
